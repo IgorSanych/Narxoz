@@ -1,0 +1,329 @@
+// Устанавливает шрифт
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+// Переменые
+$fontfamily: "Lato";
+$minwidth: 320px;
+// Устанавливаем обнуляющие стили
+@import "_nullstyle";
+@import "_bgsl";
+
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+.container {
+	max-width: 1272px;
+	margin: 0 auto;
+}
+
+.header {
+
+	&__body {
+		height: 100px;
+
+	}
+
+	&__row {
+		display: flex;
+
+	}
+
+	&__logo {
+		width: 300px;
+		padding: 0px 100px 0px 0px;
+	}
+
+	&__logo img{
+		width: 100%;
+	}
+
+	&__menu {
+		display: flex;
+	}
+
+}
+.item {
+	display: flex;
+}
+
+.item li{
+	display: flex;
+	margin: 32px 0px 0px 0px;
+	padding: 0px 25px;
+	font-family: "Lato";
+	font-weight: bold;
+}
+
+.item li:hover{
+	border-bottom: 2px solid black;
+}
+.sing {
+	background-color: #d50032;
+	margin: 19px 0px 0px 20px;
+	font-family: sans-serif;
+	font-weight: bold;
+	width: 70px;
+	height: 40px;
+	justify-content: center;
+	border-radius: 15px;
+	display: flex;
+	align-items: flex-end;
+}
+
+.reg {
+	background-color: #d50032;
+	margin: 19px 0px 0px 20px;
+	font-family: sans-serif;
+	font-weight: bold;
+	width: 100px;
+	height: 40px;
+	justify-content: center;
+	border-radius: 15px;
+	display: flex;
+	align-items: flex-end;
+
+}
+
+.sing:hover{
+	background-color: rgb(218, 214, 7);
+}
+
+.fbp {
+
+	&__body {
+		display: flex;
+	}
+
+	&__left {
+		display: flex;
+	}
+
+	&__right {
+		padding-left: 100px;
+	}
+
+	&__title {
+		padding-top: 50px;
+		font-size: 40px;
+		font-weight: bold;
+		text-align: center;
+		padding-bottom: 35px;
+
+	}
+
+	&__subtitle {
+		width: 700px;
+		font-size: 20px;
+		text-align: center;
+		
+	}
+}
+
+.fpb {
+
+	&__image {
+		padding: 50px 0px;
+		
+	}
+	&__image img {
+		width: 350px;
+		
+	}
+}
+
+
+.main {
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__row-left {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-left: 200px;
+	}
+
+	&__title {
+		font-weight: bold;
+		font-size: 50px;
+		padding-bottom: 25px;
+		color: #ffffff;
+	}
+
+	&__subtitle {
+		width: 400px;
+		font-weight: bold;
+		font-size: 25px;
+	}
+
+	&__row-right {
+		display: flex;
+		padding: 90px 180px 0px 0px;
+	}
+
+	&__image {
+		display: flex;
+
+	}
+	&__image img{
+		display: flex;
+
+	}
+}
+.full {
+	width: 100%;
+	height: 700px;
+	background-color: #d50032;
+}
+
+.full__2{
+	width: 100%;
+	height: 877px;
+	background-color: #d50032;
+}
+
+
+.inform {
+
+	&__body {
+	}
+
+	&__title {
+		display: flex;
+		justify-content: center;
+		padding-top: 75px;
+		font-weight: bold;
+		font-size: 40px;
+	}
+
+	&__row {
+		display: flex;
+	}
+
+	&__logo {
+		display: flex;
+		padding: 75px 25px;
+	}
+}
+.container {
+}
+.logo {
+
+	&__1 {
+	}
+
+	&__2 {
+	}
+
+	&__3 {
+	}
+
+	&__4 {
+	}
+
+	&__5 {
+	}
+
+	&__6 {
+		padding-left: 30px;
+	}
+}
+
+.footer {
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__left {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__item {
+		padding-top: 25px;
+		color: #fff;
+		font-weight: bold;
+		font-size: 15px;
+	}
+
+	&__item li:nth-child(1){
+		text-align: center;
+		font-size: 19px;
+		padding-bottom: 5px;
+	}
+	&__item li:nth-child(2){
+		padding-bottom: 10px;
+	}
+	&__item li:nth-child(3){
+		text-align: center;
+		font-size: 19px;
+		padding-bottom: 5px;
+	}
+	&__item li:nth-child(4){
+		text-align: center;
+		padding-bottom: 3px;
+	}
+	&__item li:nth-child(5){
+		text-align: center;
+		padding-bottom: 10px;
+	}
+	&__item li:nth-child(6){
+		text-align: center;
+		font-size: 19px;
+		padding-bottom: 5px;
+	}
+	&__item li:nth-child(7){
+		text-align: center;
+	}
+}
+.full {
+
+	&__1 {
+		width: 100%;
+	height: 200px;
+	background-color: #333;
+	}
+}
+
+
+// Регистрация
+
+.singin {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 150px 0px 0px 600px;
+}
+.title {
+	display: flex;
+	font-size: 80px;
+	font-weight: bold;
+	color: #ffffff;
+	padding-bottom: 50px;
+
+}
+.form-control {
+	border: 1px solid black;
+	border-radius: 5px;
+	height: 55px;
+	font-weight: bold;
+	padding-left: 5px;
+	
+}
+.registration {
+	border: 1px solid black;
+	border-radius: 5px;
+	height: 55px;
+	font-weight: bold;
+	margin-top: 20px;
+	background-color: rgb(255, 254, 254);
+	font-size: 20px;
+	
+	
+}
